@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		046F149A2E62A2C700DF04BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F14962E62A2C700DF04BC /* ContentView.swift */; };
+		046F14A92E62B05800DF04BC /* ScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F14A82E62B05800DF04BC /* ScoreApp.swift */; };
+		046F14AB2E62B0C300DF04BC /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F14AA2E62B0C300DF04BC /* AppTheme.swift */; };
+		046F14AD2E62B46D00DF04BC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F14AC2E62B46D00DF04BC /* Team.swift */; };
+		046F14AF2E62B54A00DF04BC /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F14AE2E62B54A00DF04BC /* MatchViewModel.swift */; };
+		046F14B12E62B8F400DF04BC /* TeamCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F14B02E62B8F400DF04BC /* TeamCard.swift */; };
+		046F14B32E62C1C500DF04BC /* MatchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F14B22E62C1C500DF04BC /* MatchScreen.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		047D18822E6299E200FBE07C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046F14962E62A2C700DF04BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		046F14A82E62B05800DF04BC /* ScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreApp.swift; sourceTree = "<group>"; };
+		046F14AA2E62B0C300DF04BC /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		046F14AC2E62B46D00DF04BC /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		046F14AE2E62B54A00DF04BC /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		046F14B02E62B8F400DF04BC /* TeamCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCard.swift; sourceTree = "<group>"; };
+		046F14B22E62C1C500DF04BC /* MatchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScreen.swift; sourceTree = "<group>"; };
 		047D18742E6299E000FBE07C /* Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Score.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047D18812E6299E200FBE07C /* ScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047D188B2E6299E200FBE07C /* ScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,9 +89,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046F14A12E62AD6E00DF04BC /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				046F14AA2E62B0C300DF04BC /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		046F14A22E62AE2E00DF04BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				046F14AC2E62B46D00DF04BC /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		046F14A42E62AEA700DF04BC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				046F14AE2E62B54A00DF04BC /* MatchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		046F14A52E62AEB100DF04BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				046F14A72E62AF8400DF04BC /* Components */,
+				046F14B22E62C1C500DF04BC /* MatchScreen.swift */,
+				046F14962E62A2C700DF04BC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		046F14A62E62AF7A00DF04BC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		046F14A72E62AF8400DF04BC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				046F14B02E62B8F400DF04BC /* TeamCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		047D186B2E6299E000FBE07C = {
 			isa = PBXGroup;
 			children = (
+				046F14A82E62B05800DF04BC /* ScoreApp.swift */,
+				046F14A62E62AF7A00DF04BC /* Util */,
+				046F14A52E62AEB100DF04BC /* Views */,
+				046F14A42E62AEA700DF04BC /* ViewModels */,
+				046F14A22E62AE2E00DF04BC /* Models */,
+				046F14A12E62AD6E00DF04BC /* Theme */,
 				047D18762E6299E000FBE07C /* Score */,
 				047D18842E6299E200FBE07C /* ScoreTests */,
 				047D188E2E6299E200FBE07C /* ScoreUITests */,
@@ -236,6 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046F14B32E62C1C500DF04BC /* MatchScreen.swift in Sources */,
+				046F14AD2E62B46D00DF04BC /* Team.swift in Sources */,
+				046F14AB2E62B0C300DF04BC /* AppTheme.swift in Sources */,
+				046F14B12E62B8F400DF04BC /* TeamCard.swift in Sources */,
+				046F14AF2E62B54A00DF04BC /* MatchViewModel.swift in Sources */,
+				046F14A92E62B05800DF04BC /* ScoreApp.swift in Sources */,
+				046F149A2E62A2C700DF04BC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,13 +474,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23WG6M6SNP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,13 +502,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23WG6M6SNP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+enum Team {
+    case home
+    case away
+}
+
+extension Team {
+    var label: String{
+        switch self{
+        case .home: return "Local"
+        case .away: return "Visitante"
+        }
+    }
+}

@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct AppTheme: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+enum AppTheme {
+    static let spacing: CGFloat = 48
+    static let cardCorner: CGFloat = 24
+    
+    static var bigScoreFont: Font {
+        .system(size: 120, weight: .bold, design: .rounded)
     }
-}
-
-#Preview {
-    AppTheme()
 }
