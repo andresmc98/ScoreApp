@@ -32,18 +32,21 @@ struct TeamCard: View {
                     .cornerRadius(12)
             }
             
-            HStack(spacing: 12){
+            HStack(spacing: 20){
                 Button("-1",action: onMinus)
                     .buttonStyle(.bordered)
-                    .font(.title2)
+                    .font(.title)
+                    .frame(width: 80, height: 80)
+                    
                 
                 Button("+1", action: onPlus)
                     .buttonStyle(.borderedProminent)
-                    .font(.title2)
+                    .font(.title)
+                    .frame(width: 80, height: 60)
                     
             }
         }
-        .frame(maxWidth: 360)
+        .frame(maxWidth: 360, maxHeight: 480)
         .padding()
         .background(.thinMaterial)
         .cornerRadius(AppTheme.cardCorner)
