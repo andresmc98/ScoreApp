@@ -22,7 +22,7 @@ struct MatchScreen: View {
             )
             
             //Center Controls
-            VStack(spacing: 16){
+            VStack(spacing: 20){
                 Text("Score")
                     .font(.largeTitle.bold())
                 
