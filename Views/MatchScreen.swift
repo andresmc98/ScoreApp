@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MatchScreen: View {
     @StateObject private var vm = MatchViewModel()
+    @State private var showReset = false
     
     var body: some View {
         HStack(spacing: AppTheme.spacing) {
@@ -36,7 +37,7 @@ struct MatchScreen: View {
                 .buttonStyle(.borderedProminent)
                 
                 Button(role: .destructive){
-                    vm.reset()
+                    showReset = true
                 } label:{
                     Text("Reset")
                 }
@@ -53,6 +54,12 @@ struct MatchScreen: View {
         }
         .padding()
         .scenePadding()
+        .alert("¿Reiniciar Score?", isPresented: $showReset){
+            Button("Cancelar", role: .cancel) { }
+            Button("Reset", role: .destructive){
+                vm.reset()
+            }
+        }
     }
 }
 
