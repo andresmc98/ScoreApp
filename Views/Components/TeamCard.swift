@@ -22,14 +22,14 @@ struct TeamCard: View {
                 
                 Text("\(score)")
                     .font(.system(
-                        size: geo.size.width * 0.35, // porcentaje del ancho
+                        size: geo.size.width * 0.75, // porcentaje del ancho
                         weight: .bold,
                         design: .rounded
                     ))
                     .minimumScaleFactor(0.3) // se reduce si no cabe
                     .lineLimit(1)
                     .monospacedDigit()
-                    .frame(maxHeight: geo.size.height * 0.3) // proporcional al alto
+                    .frame(maxHeight: geo.size.height * 0.75) // proporcional al alto
                     .layoutPriority(1)
                 
                 if isServing {
@@ -61,7 +61,7 @@ struct TeamCard: View {
             .cornerRadius(AppTheme.cardCorner)
             .shadow(radius: 8)
         }
-        .frame(maxWidth: 360, maxHeight: 600) // tamaño máximo del card
+        .frame(maxWidth: 400, maxHeight: 600) // tamaño máximo del card
     }
 }
 

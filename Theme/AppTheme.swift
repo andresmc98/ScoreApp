@@ -12,6 +12,6 @@ enum AppTheme {
     static let cardCorner: CGFloat = 24
     
     static var bigScoreFont: Font {
-        .system(size: 120, weight: .bold, design: .rounded)
+        .system(size: 180, weight: .bold, design: .rounded)
     }
 }

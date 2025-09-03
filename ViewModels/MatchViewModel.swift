@@ -12,10 +12,18 @@ final class MatchViewModel: ObservableObject {
     @Published var awayScore: Int = 0
     @Published var serving: Team = .home
     
+    private let maxScore: Int = 99
+    
     func addPoint(_ team: Team){
         switch team {
-        case .home: homeScore += 1
-        case .away: awayScore += 1
+        case .home:
+            if homeScore < maxScore{
+                homeScore += 1
+            }
+        case .away:
+            if awayScore < maxScore {
+                awayScore += 1
+            }
         }
     }
     
